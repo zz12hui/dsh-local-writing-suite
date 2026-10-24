@@ -26,6 +26,9 @@
 | `doc-review` | 7 类文档：简历到标书 |
 | `scripts/story-state.mjs` | 状态权威，跨会话恢复章号与伏笔 |
 
+姊妹项目：[dsh-deai-audit](https://github.com/zz12hui/dsh-deai-audit) 是上一代六维版，独立仓库、独立安装。两边注册的工具同名，同一个 profile 只能装一个。
+
+
 ## 2. 快速开始
 
 ```bash
