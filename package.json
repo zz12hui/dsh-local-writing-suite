@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "DSH 写作与审查套件：小说写作流水线（状态落盘、写前门禁、审稿）+ 通用文档审查 + 去 AI 味（七维、套路句式规则、blocking 分级）。",
+  "description": "DSH 写作与审查套件：中长文本（例如小说）写作流水线（状态落盘、写前门禁、审稿）+ 通用文档审查 + 去 AI 味（七维、套路句式规则、blocking 分级）。",
   "author": "zz12hui",
   "license": "MIT",
   "keywords": [

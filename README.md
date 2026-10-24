@@ -2,7 +2,7 @@
 
 ![banner](assets/readme/banner.png)
 
-> DSH 本地插件。2 个工具、4 个 skill，小说线和文档线共用一道门禁。
+> DSH 本地插件。2 个工具、4 个 skill，中长文本线（例如小说）和文档线共用一道门禁。
 
 第 40 章的坑往往来自第 12 章。这件事交给状态文件。
 
@@ -14,11 +14,13 @@
 
 装进 DSH 后多出 2 个工具、4 个 skill，全程本机运行，联网次数 0。
 
+中长文本这条线不限于小说。剧本、连载也算。按章或按节推进，状态文件管连续性。
+
 | 组成 | 干什么 |
 | --- | --- |
 | `deai_audit` | 七维打分，逐句打标，带行号与门禁结论 |
 | `deai_audit_config` | 管配置：看、列、写、恢复默认 |
-| `writing-suite` | 入口路由，2 条线：小说、文档 |
+| `writing-suite` | 入口路由，2 条线：中长文本（例如小说）、文档 |
 | `novel-write` | 开书到续写，按章推进 |
 | `novel-review` | 机器 lint 打底，再走 3 视角人读 |
 | `doc-review` | 7 类文档：简历到标书 |
@@ -33,13 +35,13 @@ node install.mjs
 `install.mjs` 做 4 件事，重复执行安全。
 
 1. 备份 profile 的 `package.json` 到 `~/.dsh/backups/`
-2. 复制插件到 `~/.dsh/local-plugins/dsh-local-writing-suite`
+2. 复制插件到 `~/.dsh/local-plugins/`
 3. 挂 `link:` 依赖，建 1 个 node_modules junction
 4. 复制 4 个 skill 到 `~/.dsh/skills/`
 
 装完重启 DSH。工具在进程启动时注册，热更目录不会重载。
 
-装完不放心，跑自检。它查 7 项：插件目录、依赖、node_modules 链接、工具注册、体裁表、门禁实跑 2 次、skill 安装。
+装完不放心，跑自检。它查 7 项。前 4 项看装没装，后 3 项看跑不跑。
 
 ```bash
 node tests/verify-install.mjs          # 全部通过 exit 0
