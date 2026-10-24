@@ -1,0 +1,39 @@
+{
+  "name": "dsh-local-writing-suite",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "DSH 写作与审查套件：小说写作流水线（状态落盘、写前门禁、审稿）+ 通用文档审查 + 去 AI 味（七维、套路句式规则、blocking 分级）。",
+  "author": "zz12hui",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "novel",
+    "writing",
+    "deai",
+    "review"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "config/*.json",
+    "scripts/*.mjs",
+    "skills/**",
+    "references/**"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

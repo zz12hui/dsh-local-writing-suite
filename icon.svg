@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Writing & Review Suite">
+  <rect width="64" height="64" rx="14" fill="#1f2937"/>
+  <path d="M20 46.5 23.2 34.6 40.9 16.9a5.1 5.1 0 0 1 7.2 0l1.9 1.9a5.1 5.1 0 0 1 0 7.2L32.3 43.7 20 46.5Z" fill="#93c5fd"/>
+  <path d="M22.6 36.2 40.3 18.5l5.2 5.2L27.8 41.4l-6.6 1.5 1.4-6.7Z" fill="#1e3a8a"/>
+  <path d="M38 49.5h14M45 42.5l4.5 7 7-12" fill="none" stroke="#86efac" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
