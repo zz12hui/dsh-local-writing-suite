@@ -19,7 +19,7 @@ import { homedir } from 'node:os';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-export const name = 'tool-writing-suite';
+export const name = 'dsh-local-writing-suite';
 export const inject = ['tools'];
 
 const PACKAGE_CONFIG = fileURLToPath(new URL('./config/deai-config.json', import.meta.url));
