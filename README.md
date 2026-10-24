@@ -39,7 +39,16 @@ node install.mjs
 
 装完重启 DSH。工具在进程启动时注册，热更目录不会重载。
 
-回归验证跑 1 条命令，12 个样例全 PASS：
+装完不放心，跑自检。它查 7 项：插件目录、依赖、node_modules 链接、工具注册、体裁表、门禁实跑 2 次、skill 安装。
+
+```bash
+node tests/verify-install.mjs          # 全部通过 exit 0
+node tests/verify-install.mjs --json   # 给 CI 读
+```
+
+最后一项「打开对话就能用」自检查不到：工具在进程启动时注册，改完插件必须重启 DSH，重启后工具表里才有 `deai_audit`。
+
+改过引擎再跑回归，12 个样例全 PASS：
 
 ```bash
 node tests/smoke.mjs
@@ -116,7 +125,8 @@ dsh-local-writing-suite/
   scripts/story-state.mjs     状态机
   skills/                     4 个 SKILL.md
   references/                 句式库 34 条 + 2 份 schema
-  tests/smoke.mjs             12 个样例
+  tests/smoke.mjs             12 个样例（回归）
+  tests/verify-install.mjs    7 项安装自检
   install.mjs                 幂等安装
 ```
 
