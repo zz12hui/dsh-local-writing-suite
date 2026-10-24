@@ -145,3 +145,5 @@ dsh-local-writing-suite/
 ## 9. License
 
 MIT。句式规则整理自公开的网文 AI 腔讨论与写作教材，未收录未经授权的原文片段。
+
+[![](https://img.shields.io/badge/powered_by-dsh-4D6BFE?style=flat-square&logo=deepseek&logoColor=white)](https://github.com/deepseek-ai/deepseek-harness)
